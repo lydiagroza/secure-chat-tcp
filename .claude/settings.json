@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '/P:/{found=1; next} /G:/{found=0} found{print}')",
+      "Bash(dotnet new *)",
+      "Bash(dotnet sln *)",
+      "Bash(dotnet add *)",
+      "Bash(rm Common/Class1.cs)",
+      "Bash(dotnet build *)",
+      "Bash(git -C /Users/lydiagroza/Desktop/GitHub/secure-chat-tcp status)",
+      "Bash(git -C /Users/lydiagroza/Desktop/GitHub/secure-chat-tcp log --oneline)",
+      "Bash(git -C /Users/lydiagroza/Desktop/GitHub/secure-chat-tcp show HEAD --name-only)",
+      "Bash(git -C /Users/lydiagroza/Desktop/GitHub/secure-chat-tcp remote -v)",
+      "Read(//Users/lydiagroza/Desktop/GitHub/.git/**)",
+      "Bash(git -C /Users/lydiagroza/Desktop/GitHub log --oneline)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
