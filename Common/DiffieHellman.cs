@@ -30,7 +30,7 @@ public class DiffieHellman
         // Generate a random 2048-bit private key in range [2, P-2]
         var bytes = new byte[256];
         RandomNumberGenerator.Fill(bytes);
-        bytes[255] &= 0x7F;                       // clear high bit → positive LE BigInteger
+        bytes[255] &= 0x7F;                       // last bit to 0 -> positive rep in C#
         var raw = new BigInteger(bytes);
         _privateKey = (raw % (P - 3)) + 2;        // clamp to [2, P-2]
 
