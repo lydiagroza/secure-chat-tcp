@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+
+# User-specific Visual Studio files
+*.user
+*.suo
+.vs/
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# NuGet
+*.nupkg
+project.lock.json
+packages/
